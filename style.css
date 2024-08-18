@@ -1,90 +1,95 @@
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-}
+@import url("https://fonts.googleapis.com/css2?family=Caveat");
 
-#noButton {
+.Container {
   position: absolute;
-  margin-left: 150px;
-  transition: 0.5s;
-  margin-top: 30px;
+  top: 50%;
+  left: 50%;
 }
 
-#yesButton {
-  position: absolute;
-  margin-right: 150px;
-  margin-top: 30px;
-}
-
-.header_text {
-  font-family: "Nunito";
-  font-size: 80px;
-  font-weight: bold;
-
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #ffffff;
-}
-
-.text {
-  font-family: "Nunito";
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 0px;
-}
-
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.btn {
-  background-color: #017cff;
-  color: white;
-  font-weight: 600;
-  padding: 15px 32px;
-  text-align: center;
+.Picture {
   display: inline-block;
-  font-size: 40px;
-  margin: 4px 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
   cursor: pointer;
-  border: none;
-  border-radius: 12px;
-  transition: background-color 0.3s ease;
-  box-shadow: 0 3px 3px black;
+}
+.Picture-video {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 5px solid #fff;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  cursor: pointer;
+}
+.Picture-img {
+  display: block;
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
 }
 
-.btn:hover {
-  background-color: #ffffff;
-  color: #017cff;
-}
-
-.gif_container {
+.Picture-note {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
 }
-p {
-  color: white;
-  margin-left: 50%;
+.Picture-note-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 70px;
+  padding: 12px 24px;
+  font-size: 1.5rem;
+  text-align: center;
 }
-p a {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-weight: 600;
-  opacity: 0.25;
+
+.Network {
+  display: inline-block;
+  padding: 0 5px;
 }
-.gif_container{
-  padding: 30px;
+.Network-video {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.Network img {
+  width: auto;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+
+.Network-video img {
+  width: 1.5rem;
+  aspect-ratio: 1 / 1;
+  vertical-align: middle;
+}
+/* --------------------- */
+/* Other styles          */
+/* --------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Caveat', serif;
+  overflow: hidden;
 }
