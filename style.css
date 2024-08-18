@@ -36,6 +36,7 @@
   display: block;
   width: 300px;
   height: 300px;
+  object-fit: cover;
   pointer-events: none;
 }
 
@@ -70,7 +71,7 @@
 }
 
 .Network img {
-  width: auto;
+  width: 1.5rem;
   aspect-ratio: 1 / 1;
   vertical-align: middle;
 }
